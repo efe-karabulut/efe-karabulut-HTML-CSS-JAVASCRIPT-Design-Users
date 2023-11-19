@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="site-container">
+
+
+        <!-- add + butonuna tıklandığında açılan pencere -->
+        <div id="modal">
+            <div id="addNewPerson" class="addNewPerson">
+                <form action="">
+                    <div class="form-group">
+                        <input class="my-inputs" focus id="nameId" type="text" name="name" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="name">Name</label>
+                    </div>
+
+                    <div class="form-group group2">
+                        <input class="my-inputs" id="lastNameId" type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label style="white-space: nowrap;" for="email">Last Name</label>
+                    </div>
+                </form>
+
+
+                <div class="add-user-button-container">
+                    <div class="sign-in">
+                        <button id="signIn">Sign In</button>
+                    </div>
+                    <div class="sign-in">
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="delete-div" class="delete-container">
+            <div class="delete-content">
+                <span class="h1">Warning!</span>
+                <span class="p">This action is irreversible, do you confirm?</span>
+                <div class="button-container">
+                    <button id="okeyBtn" class="okey">Okey</button>
+                    <button id="cancelBtn" class="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="bodyDiv" class="body">
+            <div id="tableContainer" class="table-container">
+                <ul class="header">
+                    <li>ID</li>
+                    <li>NAME</li>
+                    <li>LAST NAME</li>
+                    <li class="new-person-button"><button id="newUserBtn">Add</button></li>
+                </ul>
+
+
+                <!-- Örnek -->
+                <!-- <ul class="table-row">
+                    <li>12</li>
+                    <li>Efe</li>
+                    <li>Karabulut</li>
+                    <li class="button-container">
+                        <button class="edit-btn">Edit</button>
+                        <button class="remove-btn">Remove</button>
+                    </li>
+                </ul> -->
+
+                <!-- modal yapısı -->
+
+                <!-- API verilerinin geleceği yerin div i -->
+                <div id="mainTable" class="main-table">
+                    <!-- API verilerinin geleceği yer -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
